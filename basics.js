@@ -1,4 +1,6 @@
-﻿// ============================================================
+﻿//Change Demonstration
+
+// ============================================================
 //  JAVASCRIPT BASICS — BEGINNER'S REFERENCE NOTES
 //  Topics: Output, Variables, Data Types, Operators,
 //          Conditional Statements, Type Casting
