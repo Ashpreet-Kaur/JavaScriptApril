@@ -82,3 +82,66 @@ let result = add(8, 7);          // the returned value (15) is stored in "result
 console.log("The sum is: " + result);  // 15
 
 
+
+
+//  Function declaration is way of writing a function in JavaScript. It consists of the "function" keyword, followed by the name of the function, parentheses for parameters, and curly braces for the function body. The code inside the function body is what gets executed when the function is called.
+
+
+
+
+//  Function expression is another way to define a function in JavaScript. Instead of using the "function" keyword, you can assign an anonymous function (a function without a name) to a variable. This allows you to create functions that can be stored in variables, passed as arguments, or returned from other functions.
+
+
+let greetexp = function (){
+    console.log("This is an function expression.")
+}
+
+greetexp()
+
+
+let sumexp = function (a,b){
+    console.log(`The sum of ${a} and ${b} is: ${a+b}`)
+    return a+b
+}
+
+sumexp(5,10);
+
+
+
+// IIFE (Immediately Invoked Function Expression) is a JavaScript function that runs as soon as it is defined. It is a design pattern that allows you to execute a function immediately after its creation, without needing to call it separately.
+
+// (function(){
+//     alert("This is an IIFE function.")
+// })()
+
+
+ 
+//  Arrow function is a concise way to write functions in JS.
+
+let greetArrow = (a,b) => 
+    {
+        console.log("This is an arrow function.")
+        console.log(`The sum of ${a} and ${b} is: ${a+b}`)
+        return a+b
+    }
+greetArrow(5,10)
+
+
+
+//  Callback function is a function that is passed as an argument to another function and is executed after some operation has been completed. It allows you to handle asynchronous operations, such as API calls or event handling, by providing a way to execute code once the operation is finished.
+
+
+//  setTimeout is a built-in JavaScript function that allows you to execute a function after a specified delay. It takes two parameters: the first is the function to be executed, and the second is the delay in milliseconds.
+
+// SetInterval is a built-in JavaScript function that allows you to execute a function repeatedly at specified intervals. It takes two parameters: the first is the function to be executed, and the second is the interval in milliseconds. The function will continue to execute until clearInterval is called with the interval ID returned by setInterval.
+
+
+function displayMessage(){
+    console.log("This message will be displayed after 2 seconds.")
+}
+
+setInterval(displayMessage, 2000)
+
+
+
+
