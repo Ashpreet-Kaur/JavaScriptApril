@@ -214,3 +214,40 @@ console.log(evenNumbers)
 // 5. Use forEach() to print the square of each number in [1, 2, 3, 4, 5].
 // 6. Use filter() to get all numbers greater than 15 from [5, 10, 15, 20, 25, 30].
 // 7.  From [1,2,3,4,5,6,7,8,9,10], use filter() to get odd numbers, then use map() to triple each one.
+
+
+
+//  reduce - 
+
+let ar = [1,2, 3,5,7,9]
+
+
+
+
+let sum = ar.reduce((acc, el)=>{
+    return acc + el
+}, 0)
+
+console.log(sum)
+
+
+//  find - returns the value of the first element in the provided array that satisfies the provided testing function. If no values satisfy the testing function, undefined is returned.
+
+let found = ar.find((el)=>{
+    return el>5
+})
+console.log(found)
+
+
+//  some() - tests whether at least one element in the array passes the test implemented by the provided function. It returns a Boolean value.
+
+let result = ar.some((el)=>{
+    return el%2==0
+})
+console.log(result)
+
+
+let result2 = ar.every((el)=>{
+    return el%2==0
+})
+console.log(result2)
