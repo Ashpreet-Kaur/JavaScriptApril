@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dark / Light Mode Example</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 0; padding: 32px; background: #fafafa; color: #111; transition: background 0.3s ease, color 0.3s ease; }
+        .container { max-width: 600px; margin: 0 auto; text-align: center; }
+        button { padding: 12px 20px; border: none; border-radius: 8px; cursor: pointer; background: #1d4ed8; color: white; font-size: 16px; }
+        .dark-mode { background: #111827; color: #f8fafc; }
+        .dark-mode button { background: #60a5fa; color: #0f172a; }
+        .box { margin-top: 24px; padding: 20px; border-radius: 12px; background: rgba(29, 78, 216, 0.1); }
+        .dark-mode .box { background: rgba(148, 163, 184, 0.2); }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Dark / Light Mode Toggle</h1>
+        <p id="modeStatus">Light mode is ON</p>
+        <button id="modeToggle">Switch to Dark Mode</button>
+        <div class="box">
+            <h2>Example content</h2>
+            <p>This page uses DOM manipulation to toggle a CSS class on the body.</p>
+        </div>
+    </div>
+    <script src="darkLightMode.js"></script>
+</body>
+</html>
